@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Notas por cursos</title>
+    <title>Lista de Enlaces</title>
     <style>
         /* Reset de margenes y padding */
         * {
@@ -21,7 +21,6 @@
             justify-content: center;
             align-items: center;
             color: white;
-            flex-direction: column;
         }
 
         /* Caja central */
@@ -40,35 +39,10 @@
             font-size: 2.5rem;
         }
 
-        .btn-container {
-            margin-bottom: 20px;
-        }
-
-        .btn-container button {
-            font-size: 1.2rem;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #4a90e2;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-container button:hover {
-            background-color: #f06;
-        }
-
-        .active {
-            background-color: #e94e77; /* Rojo/violeta para el botón activo */
-        }
-
         .list {
             margin-top: 20px;
             font-size: 1.2rem;
             text-align: left;
-            display: none; /* Inicialmente oculto */
         }
 
         .list-item {
@@ -117,251 +91,4 @@
 <body>
 
     <div class="container">
-        <h1>Notas por cursos</h1>
-
-        <!-- Botones de selección de curso -->
-        <div class="btn-container">
-            <button id="btn-1" onclick="showCourse(1)">1º ESO</button>
-            <button id="btn-2" onclick="showCourse(2)">2º ESO</button>
-            <button id="btn-3" onclick="showCourse(3)">3º ESO</button>
-            <button id="btn-4" onclick="showCourse(4)">4º ESO</button>
-        </div>
-
-        <!-- Lista de asignaturas para 1º ESO -->
-        <div id="course-1" class="list">
-            <div class="list-item">
-                <span class="name">AM:</span>
-                <span class="link-name">Avaluació AM 1r ESO</span>
-                <a href="https://docs.google.com/spreadsheets/d/1ABTLvNMeSv1ONAV6Bm5RqF-Be4F_LJw69sh5uOXjDwM/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Alemán:</span>
-                <span class="link-name">1r ESO Gradebook 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1re-d45rFcmNvip06yBNiLcSXUVd4wnIpTqZznmyCitI/edit?gid=168053627#gid=168053627" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Inglés:</span>
-                <span class="link-name">English gradebook 1ESO - Bet Forns</span>
-                <a href="https://docs.google.com/spreadsheets/d/1sCYDHaTCbXMnD1SfAGliXiflmO3Jnc8kWtC2oedwfz8/edit?gid=426635192#gid=426635192" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Mates:</span>
-                <span class="link-name">1r Mates 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1t2yEqxoSzmanCgGXg0sM8ud0PCJeHLJmQPXYIpvd19E/edit?gid=653895944#gid=653895944" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Sociales:</span>
-                <span class="link-name">gradebook PROJECTES SOCIALS 1 ESO</span>
-                <a href="https://docs.google.com/spreadsheets/d/1gIFkGoOKnErQeIEOBGHIiYu0ezqPKw7LQjBuawnq8JA/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Stem:</span>
-                <span class="link-name">GRADEBOOK 1R ESO STEAM 2024-2025</span>
-                <a href="https://docs.google.com/spreadsheets/d/1c6SWtuklcI5KC3DAhMqQknEPf1qBMoNtd5pNuIbe5ug/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-        </div>
-
-        <!-- Lista de asignaturas para 2º ESO -->
-        <div id="course-2" class="list">
-            <div class="list-item">
-                <span class="name">Inglés:</span>
-                <span class="link-name">English gradebook 2ESO 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1_15qk-h1v46ff3c2RBgTEMyuZnz3XT308HNN33CT_vU/edit?gid=1892686794#gid=1892686794" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Mates:</span>
-                <span class="link-name">2n MATES 2024/25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1aF0rwVGzHbOsgNjGBv7EoxocR-3m7UiSwvUvkdwySQk/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Am Cultura Clàssica:</span>
-                <span class="link-name">Cultura Clàssica 2n ESO</span>
-                <a href="https://docs.google.com/spreadsheets/d/1cqJvVJoY-gxTW0dOnltxAuggV1-GE77cC6OOMQIcgf8/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Am:</span>
-                <span class="link-name">AM 2n</span>
-                <a href="https://docs.google.com/spreadsheets/d/1AwqYjVS_jQ22OoYFm1cPjGMyQBFoT5IiZ3LzvP3wgbc/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Alemán:</span>
-                <span class="link-name">2n ESO Gradebook 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1SdIgi0qk7MaDXvOCb5LNSGMG_WtEKVnd1ausUvLfbZc/edit?gid=168053627#gid=168053627" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Música:</span>
-                <span class="link-name">Avaluació Música 2n</span>
-                <a href="https://docs.google.com/spreadsheets/d/1w_bu-154Q3FI9oIzv52a4CMIf4QeodqWq-UNscN0tik/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Sociales:</span>
-                <span class="link-name">Com serà el futur?</span>
-                <a href="https://docs.google.com/spreadsheets/d/1KH5khVJIGKx_b5t8hW9Rv4PliMIzRsEuHrXyHudfd5I/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Stem:</span>
-                <span class="link-name">GRADEBOOK 2n ESO STEAM 2024-2025</span>
-                <a href="https://docs.google.com/spreadsheets/d/1lf402bZvEOT4FMIRJ6wz_pCM5Cz6Kt2ztfm50p8PzIY/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">ViP:</span>
-                <span class="link-name">ViP 2n</span>
-                <a href="https://docs.google.com/spreadsheets/d/1s2BEAszvsKQl8j2Gcb1H9EzzWBc5Gqx-Q6HfmmJ-nto/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-        </div>
-
-        <!-- Secciones vacías para 3º y 4º ESO -->
-        <div id="course-3" class="list">
-            <div class="list-item">
-                <span class="name">Inglés:</span>
-                <span class="link-name">3ESO English 24-25 - Teacher: Anna C</span>
-                <a href="https://docs.google.com/spreadsheets/d/1WRRrqjs-0KWyQZPmbrV3pQQHuVrD8qsp6Osqwv1D06Q/edit?gid=2082691255#gid=2082691255" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Sociales:</span>
-                <span class="link-name">Gradebook 3 Com hem transformat el món 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/13KqZRw5R5SodIu5WyIH3wPDj89mq66gov-buoG72noQ/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Castellano:</span>
-                <span class="link-name">3ºESO Castellano Evaluación (2024-2025)</span>
-                <a href="https://docs.google.com/spreadsheets/d/1h2ilvzHJ3a03Zv54hD25yq8r_cs8gmnUTXd_eog8FWY/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Stem:</span>
-                <span class="link-name">Gradebook-STEM 3R-2024-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1VMpDoirVl8V4VuSlrrXPFE6Ss9fAycFormo2n0qXX5I/edit?gid=84915102#gid=84915102" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Mates:</span>
-                <span class="link-name">GRADEBOOK MATES 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1ZFBRNlq2o0PLBUDj2KkiFlTLzyEziNDCeL7RPSQ4AFU/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">ViP:</span>
-                <span class="link-name">Gradebook ViP 3r</span>
-                <a href="https://docs.google.com/spreadsheets/d/1VvG2VCIS2JNJpbcJA4CppF-RlM0VwRCe8Cll9DDWzx0/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Música:</span>
-                <span class="link-name">Avaluació Música 3r</span>
-                <a href="https://docs.google.com/spreadsheets/d/1B9y-_Sh3UrI9ZTIWMfYXULQ7tHiiyB6mfOZEsqcmFIA/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Radio:</span>
-                <span class="link-name">Avaluació AM-Ràdio 3r</span>
-                <a href="https://docs.google.com/spreadsheets/d/1nZq5PYMbapRVBAsEoq_GFUiTLSSU7NtPnjUPOhAFImo/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Robótica:</span>
-                <span class="link-name">GRADEBOOK ROBÒTICA 24/25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1lM8DN4eZUJ2Nl23YOxiQEx2FJyV-KVo_w2UCiEwMP8M/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Alemán:</span>
-                <span class="link-name">3r ESO Gradebook 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/12UUos_mWWsq3msQWTm4lhYJzMdnUVhtx1FrpDNVD4Qo/edit?gid=1276935479#gid=1276935479" target="_blank">Ver Gradebook</a>
-            </div>
-        </div>
-
-        <div id="course-4" class="list">
-            <div class="list-item">
-                <span class="name">Biología y Geología:</span>
-                <span class="link-name">Gradebook BG4 24_25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1IvBtbn58mdOFMNvtjrZbgSM7MaNmfiVL4OPTxcJWmjs/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Castellano:</span>
-                <span class="link-name">Castellà 4t ESO 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/1vXrPBQMH_FJaHiEHIbmB1N2akJhwUZh3ZzNCWdpTqoA/edit?gid=1721794830#gid=1721794830" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Alemán:</span>
-                <span class="link-name">4r ESO Gradebook 24-25</span>
-                <a href="https://docs.google.com/spreadsheets/d/12oap0_NMlKm1OAEXerIxJvCkpzZqe3wtAK_vIfgB8ak/edit?gid=306226368#gid=306226368" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Emprenedoria:</span>
-                <span class="link-name">EMPRENEDORIA 4ESO</span>
-                <a href="https://docs.google.com/spreadsheets/d/1DA2wfZcThRQscNGkICQ0aysnNjOnoY-bU4hstocDwYU/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Inglés:</span>
-                <span class="link-name">4ESO English 24-25 - Teacher: Anna C</span>
-                <a href="https://docs.google.com/spreadsheets/d/1SqJbD7aB_zZPUc5_R68fw-OQesCCKNDuQ4BtiDTvYnI/edit?gid=31662757#gid=31662757" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Mates Opción C:</span>
-                <span class="link-name">4t Opció C</span>
-                <a href="https://docs.google.com/spreadsheets/d/1iFwVs2htGOqiofk0_mkjodLMamIiAVPaYcymVvpxPFA/edit?gid=653895944#gid=653895944" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Mates Opción B:</span>
-                <span class="link-name">4t Opció B</span>
-                <a href="https://docs.google.com/spreadsheets/d/1uIIww5M0QMN2XHyv0VdExpOvPb9WHIuzhVbvR4Jr2YI/edit?gid=653895944#gid=653895944" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Música:</span>
-                <span class="link-name">Seguiment d'avaluació Música 4t</span>
-                <a href="https://docs.google.com/spreadsheets/d/1U0WT9179WFCvd9-8_VVSgJJS23_GTXPxUzkIxX2242w/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">Sociales:</span>
-                <span class="link-name">Gradebook</span>
-                <a href="https://docs.google.com/spreadsheets/d/1Y9RpZ-j6kkAGvMuaYtpPkCm_iYnV0bOjyavonfaZJhQ/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-            <div class="list-item">
-                <span class="name">ViP:</span>
-                <span class="link-name">Gradebook ViP 4t</span>
-                <a href="https://docs.google.com/spreadsheets/d/1Jv4LsEmH8BfhR5v7ZXWabuqyrzVFdhCrNbSLQjBYFXQ/edit?gid=0#gid=0" target="_blank">Ver Gradebook</a>
-            </div>
-       
-        
-    </div>
-
-    <script>
-        function showCourse(course) {
-            // Ocultar todas las listas
-            document.getElementById('course-1').style.display = 'none';
-            document.getElementById('course-2').style.display = 'none';
-            document.getElementById('course-3').style.display = 'none';
-            document.getElementById('course-4').style.display = 'none';
-
-            // Ocultar los botones activos
-            document.getElementById('btn-1').classList.remove('active');
-            document.getElementById('btn-2').classList.remove('active');
-            document.getElementById('btn-3').classList.remove('active');
-            document.getElementById('btn-4').classList.remove('active');
-
-            // Mostrar la lista del curso seleccionado
-            document.getElementById('course-' + course).style.display = 'block';
-
-            // Cambiar el texto en el apartado "¿Dónde estás?"
-            const location = document.getElementById('location');
-            switch(course) {
-                case 1:
-                    location.textContent = 'Estás en 1º ESO';
-                    break;
-                case 2:
-                    location.textContent = 'Estás en 2º ESO';
-                    break;
-                case 3:
-                    location.textContent = 'Estás en 3º ESO';
-                    break;
-                case 4:
-                    location.textContent = 'Estás en 4º ESO';
-                    break;
-            }
-
-            // Activar el botón correspondiente
-            document.getElementById('btn-' + course).classList.add('active');
-        }
-
-        // Al cargar la página, se muestra 1º ESO por defecto
-        window.onload = function() {
-            showCourse(3); // Ahora se muestra 1º ESO por defecto
-        }
-    </script>W
-
-</body>
-</html>
+        <h1>Cerrado por problemas con la institución pública.</h1>
